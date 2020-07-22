@@ -1,0 +1,14 @@
+<!-- <p>success-alert works!</p>
+<button [disabled]="!clicked">I am button</button>
+<p>{{clicked}} string interpolation</p>
+<p [innerText]='clicked'>property binding</p>
+
+<label> Name</label>
+<input type="text" (input)='onUpdateName($event)'>
+<input type="text" [(ngModel)]="name">
+<p>{{name}}</p> -->
+
+
+<label>User Name</label>
+<input [(ngModel)]="userName"> {{userName}}
+<button [disabled]="!userName" (click)="userName=''">Clear User Name</button>
