@@ -13,14 +13,13 @@ export class ShoppingListService {
   }
   addIngredient(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
-    console.log(ingredient);
+    // console.log(ingredient);
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
 
   addIngredients(ingredients: Ingredient[]) {
     this.ingredients.push(...ingredients);
-    console.log(ingredients);
-    // this.ingredientsChanged.emit(this.ingredients.slice());
-
+    // console.log(ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
   }
 }
